@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aether Press — Blog & News Platform</title>
+    <meta name="description" content="Aether Press is a modern blog and news platform for AI, Business, Tech, AWS, and daily headlines. Read high-quality stories from verified authors." />
+    <meta name="keywords" content="blog, news, AI, technology, business, daily news, articles, Aether Press" />
+    <meta name="author" content="Aether Press" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://aether.press/" />
+    <meta property="og:title" content="Aether Press — Blog & News Platform" />
+    <meta property="og:description" content="Read and discover the latest blogs, news, and tech articles on Aether Press." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aether Press" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aether Press — Blog & News" />
+    <meta name="twitter:description" content="Modern blog & news platform for tech, AI, business and daily headlines." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('aether_theme');
+          var isDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Aether Publishing Platform",
+  "description": "A modern SaaS-grade publishing and reader platform featuring dynamic hero showcases, category streams, rich WYSIWYG editor with inline media, dual author/reader dashboards, and responsive dark/light modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
